@@ -16,6 +16,9 @@ function NavBar() {
 
 	return (
 		<nav className='NavbarItems'>
+			<h1 className='navbar-logo'>
+				React <i className='fab fa-react'></i>
+			</h1>
 			<div>
 				<ul>{renderMenuItems(MenuItems)}</ul>
 			</div>
