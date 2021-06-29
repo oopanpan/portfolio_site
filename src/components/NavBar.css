@@ -1,0 +1,19 @@
+.NavbarItems {
+	background: linear-gradient(
+		72deg,
+		rgb(100, 94, 254) 0%,
+		rgba(60, 47, 238, 0.404) 100%
+	);
+	height: 80px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 1.2rem;
+}
+
+.navbar-logo {
+	color: #fff;
+	justify-self: start;
+	margin-left: 20px;
+	cursor: pointer;
+}

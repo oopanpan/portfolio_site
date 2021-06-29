@@ -1,7 +1,12 @@
 import React from 'react';
+import { useState } from 'react';
+
 import { MenuItems } from './MenuItems';
+import './NavBar.css';
 
 function NavBar() {
+	const [clicked, setClicked] = useState(false);
+
 	const renderMenuItems = (arr) => {
 		return arr.map((el, index) => {
 			return (
