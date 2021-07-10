@@ -33,3 +33,28 @@
 	justify-content: end;
 	margin-right: 2rem;
 }
+
+.nav-links {
+	color: #fff;
+	text-decoration: none;
+	padding: 0.5rem 1rem;
+}
+
+.nav-links:hover {
+	background-color: #ae93ec;
+	border-radius: 5px;
+	border-color: #fff;
+	transition: all 0.2s ease-out;
+}
+
+.fa-bars {
+	color: #fff;
+}
+
+.nav-links-mobile {
+	display: none;
+}
+
+.menu-icon {
+	display: none;
+}
