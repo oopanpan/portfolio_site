@@ -2,6 +2,7 @@ import React from 'react';
 import { useState } from 'react';
 
 import { MenuItems } from './MenuItems';
+import { Button } from './Button';
 import './NavBar.css';
 
 function NavBar() {
@@ -33,6 +34,7 @@ function NavBar() {
 					{listMenuItems(MenuItems)}
 				</ul>
 			</div>
+			<Button>Hello</Button>
 		</nav>
 	);
 }
