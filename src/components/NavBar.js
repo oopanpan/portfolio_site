@@ -7,12 +7,12 @@ import './NavBar.css';
 function NavBar() {
 	const [clicked, setClicked] = useState(false);
 
-	const renderMenuItems = (arr) => {
-		return arr.map((el, index) => {
+	const listMenuItems = (arr) => {
+		return arr.map((entry, index) => {
 			return (
 				<li key={index}>
-					<a className={el.cName} href={el.url}>
-						{el.label}
+					<a className={entry.cName} href={entry.url}>
+						{entry.label}
 					</a>
 				</li>
 			);
@@ -22,10 +22,16 @@ function NavBar() {
 	return (
 		<nav className='NavbarItems'>
 			<h1 className='navbar-logo'>
-				React <i className='fab fa-react'></i>
+				React
+				<i className='fab fa-react'></i>
 			</h1>
+			<div className='menu-icon' onClick={() => setClicked(!clicked)}>
+				<i className={clicked ? 'fas fa-times' : 'fas fa-bars'}></i>
+			</div>
 			<div>
-				<ul>{renderMenuItems(MenuItems)}</ul>
+				<ul className={clicked ? 'nav-menu active' : 'nav-menu'}>
+					{listMenuItems(MenuItems)}
+				</ul>
 			</div>
 		</nav>
 	);
